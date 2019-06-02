@@ -4,7 +4,7 @@ import requests
 
 url = 'http://158.69.76.135/level0.php'
 data = {'id': '650', 'holdthedoor': 'Submit'}
-votes = 3
+votes = 1024
 ok = 0
 
 for i in range(votes):
