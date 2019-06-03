@@ -9,7 +9,7 @@ data = {'id': '650', 'holdthedoor': 'Submit'}
 referer = url
 agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'
 headers = {'User-Agent': agent, 'Referer': url}
-votes = 4096
+votes = 1096
 ok = 0
 s = requests.Session()
 s.headers.update(headers)
@@ -24,9 +24,9 @@ for i in range(votes):
         continue
 
     data["key"] = matches[0]
-    print(data)
+    # print(data)
     response = s.post(url, data=data)
-    print(response.text)
+    # print(response.text)
     if response.status_code is 200:
         ok += 1
     print("{} done...".format(i + 1))
